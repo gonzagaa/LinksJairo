@@ -1,0 +1,41 @@
+#links img.jairo {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+
+    mask-image: linear-gradient(to bottom, #000, transparent 90%);
+}
+
+#links header img.icon {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+#links header h2 {
+    font-size: 3rem;
+    background: linear-gradient(145deg, #eeeeef 50%, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+
+    font-family: 'Paralucent-Medium', sans-serif;
+}
+
+#links header p {
+    text-transform: uppercase;
+    font-family: var(--interV);
+    letter-spacing: 4px;
+
+    background: var(--gradient-yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1080px) {
+    section#links img.jairo {
+        width: 25%;
+        mask-image: linear-gradient(to bottom, #000, transparent 80%);
+    }
+}

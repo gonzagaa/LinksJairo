@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.cdnfonts.com/css/paralucent-heavy?styles=168363,168366,168368,168370,168372,168374" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icon jairo.png"
+      type="image/x-icon"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/40e1b7901b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.1.14/dist/lenis.css"
+    />
+
+    <!-- Primary Meta Tags -->
+    <title>Jairo Teixeira - Links.</title>
+    <meta name="title" content="Jairo Teixeira - Links." />
+  </head>
+  <body>
+    
+    <section id="links">
+      <div class="wrapper">
+        <header data-aos="fade-up">
+          <img class="icon" src="./assets/icon jairo.png" alt="">
+          <h2>Jairo Teixeira</h2>
+          <p>COMPORTAMENTO CANINO</p>
+        </header>
+
+        <div class="links">
+          <a target="_blank" href="https://meucachorroadestrado.com.br/">
+            <div class="blush"></div>
+
+            <div class="link">
+              <img class="bg" src="./assets/capas/cachorro 1 fundo preto.png" alt="">
+
+              <div class="text">
+                <h3>Meu Cachorro Adestrado</h3>
+                <p>Aprenda a adestrar o seu próprio cão de forma prática.</p>
+              </div>
+  
+              <img class="image" src="./assets/mca.png" alt="">
+            </div>
+          </a>
+
+          <a class="right" target="_blank" href="https://jairoteixeira.com.br/comunidade">
+            <div class="blush"></div>
+
+            <div class="link">
+              <img class="bg" src="./assets/capas/cachorro 2 fundo preto.png" alt="">  
+              <div class="text">
+                <h3>Comunidade Adestramento</h3>
+                <p>Entre para a lista de espera e garanta 30% de desconto</p>
+              </div>
+  
+              <img class="image" src="./assets/comunidadeadestramento.png" alt="">
+            </div>
+          </a>
+        </div>
+
+        <div class="social">
+          <p>LINKS SOCIAIS</p>
+
+          <div class="social-links">
+            <a data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"  class="ig" target="_blank" href="https://www.instagram.com/jaironaarea/">
+                <img src="./assets/ig.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a
+      id="buttonWhatsapp"
+      class="show"
+      target="_blank"
+      href="https://wa.link/ge6c2z"
+    >
+      <img src="./assets/whatsapp logo.webp" alt="" />
+    </a>
+
+    <div id="customAlert" class="custom-alert">Opss! Conteúdo protegido.</div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script>
+      // Initialize Lenis with options
+      const lenis = new Lenis({
+        smooth: true, // Ativa o scroll suave
+        duration: 1.1, // Define a duração do scroll (maior valor deixa mais lento)
+        easing: (t) => 1 - Math.pow(1 - t, 4), // Função de easing para suavidade
+      });
+
+      // Listen for the scroll event and log the event data
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+
+      // Use requestAnimationFrame to continuously update the scroll
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
+
+    <!-- Particles JS -->
+    <script>
+      AOS.init(
+          {
+              duration: 1200,
+          }
+      );
+  </script>
+  </body>
+</html>
