@@ -1,7 +1,7 @@
-@import './global.css';
-@import './sectionLinks.css';
-@import './button.css';
-@import './alert.css';
-@import './head.css';
-@import './social.css';
+@import './global.css?v=1';
+@import './sectionLinks.css?v=1';
+@import './button.css?v=1';
+@import './alert.css?v=1';
+@import './head.css?v=1';
+@import './social.css?v=1';
 
