@@ -102,7 +102,7 @@ html {
 
   @media (min-width: 1080px) {
     .wrapper {
-      width: min(60rem, 100%);
+      width: min(40rem, 100%);
     }
   }
   

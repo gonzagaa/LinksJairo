@@ -33,6 +33,8 @@
   border-radius: 1rem;
   width: 100%;
   padding: 3rem;
+  padding-left: 4rem;
+  /* padding-top: 4.5rem; */
   box-shadow: 20px 20px 60px #02020279, -20px -20px 60prgba(2, 2, 2, 0.424)02;
 
   backdrop-filter: blur(20px) saturate(128%);
@@ -155,6 +157,33 @@
 
 
   mask-image: linear-gradient(to right, #000 20%, transparent);
+}
+
+#links img.faixa {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+
+  border-radius: 1rem 1rem 0 0;
+
+  /* mask-image: linear-gradient(to right, #000, transparent); */
+}
+
+#links img.faixa.vertical {
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  width: auto;
+  left: -.5rem;
+  top: 0;
+  z-index: 0;
+
+  border-radius: 1.5rem 0 0 1.5rem;
+
+  /* mask-image: linear-gradient(to right, #000, transparent); */
 }
 
 @media (min-width: 1080px) {
