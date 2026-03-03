@@ -6,13 +6,13 @@
 }
 
 #links .links {
-  margin-block: 4rem;
+  margin-block: 5rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4.5rem;
+  gap: 3rem;
 }
 
 #links .links a {
@@ -33,7 +33,7 @@
   border-radius: 1rem;
   width: 100%;
   padding: 3rem;
-  padding-left: 4rem;
+  padding-left: 3rem;
   /* padding-top: 4.5rem; */
   box-shadow: 20px 20px 60px #02020279, -20px -20px 60prgba(2, 2, 2, 0.424)02;
 
@@ -46,6 +46,10 @@
 
 #links .links a.mca .link {
   background: linear-gradient(to right, #0d0600 0%, #0f0400 100%);;
+}
+
+#links .links a.abaixo .link {
+  background: linear-gradient(to right, #0f0000 0%, #0f0400 100%);;
 }
 
 #links .links a.viver .link,
@@ -68,6 +72,10 @@
 
 #links a.mca .blush {
   background: radial-gradient(#ff7327, transparent 50%);
+}
+
+#links a.abaixo .blush {
+  background: radial-gradient(#ff2727, transparent 50%);
 }
 
 #links .links a {
@@ -97,7 +105,11 @@
   position: absolute;
   right: -4%;
   bottom: 0;
-  width: 15rem;
+  width: 12rem;
+}
+
+#links a.abaixo img.image {
+  right: 0;
 }
 
 #links a.viver .link img.image {
@@ -127,6 +139,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+#links a.abaixo .link h3 {
+  background: linear-gradient(45deg, #d61629 0%, #ff2d2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #links a.viver .link h3,
 #links a.cmd .link h3 {
   background: linear-gradient(45deg, #ffa216 0%, #ffdd99 100%);
@@ -135,7 +153,7 @@
 } 
 
 #links .link p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #ababab;
 }
 
